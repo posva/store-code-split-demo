@@ -10,3 +10,13 @@ yarn
 yarn build
 grep -Rl 'Im a' dist # dist/1.bundle.js
 ```
+
+## Dev
+
+Use something like `serve`
+
+```sh
+# in two terminals
+serve dist
+yarn dev
+```
