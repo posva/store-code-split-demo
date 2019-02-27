@@ -11,6 +11,8 @@ yarn build
 grep -Rl 'Im a' dist # dist/1.bundle.js
 ```
 
+Unfortunately, the same file cannot be code splitted into different bundles. Unused function can be removed though
+
 ## Dev
 
 Use something like `serve`
