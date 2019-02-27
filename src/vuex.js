@@ -1,3 +1,4 @@
+// completely fake an uncomplete Store
 export class Store {
   // register a getter
   getter(name, fn) {
