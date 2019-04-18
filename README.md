@@ -5,20 +5,24 @@ For it to work, it is necessary to split _actions_ and _getters_ from `index.js`
 
 ## Instructions
 
+First try without changing anything
+
 ```sh
 yarn
 yarn build
-grep -Rl 'Im a' dist # dist/1.bundle.js
+grep -Rl another dist # dist/1.js
 ```
 
-Unfortunately, the same file cannot be code splitted into different bundles. Unused function can be removed though
+The unused function in `actions.js` gets discarded
 
-## Dev
-
-Use something like `serve`
+then comment out the content in `src/index.js` and build again:
 
 ```sh
-# in two terminals
-serve dist
-yarn dev
+yarn
+yarn build
+grep -Rl another dist # dist/1.js and dist/2.js
 ```
+
+Both files 1.js and 2.js include **all actions**
+
+Unfortunately, the same file cannot be code splitted into different bundles. Unused function can be removed though
