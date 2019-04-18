@@ -1,3 +1,5 @@
 import { otherAction } from './moduleA/actions'
 
-otherAction()
+export function execute() {
+  otherAction()
+}

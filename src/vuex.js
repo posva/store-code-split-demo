@@ -9,4 +9,3 @@ export class Store {
   }
 }
 
-export class Module {}
